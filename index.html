@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Countdown Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="particles-container" id="particles-js"></div>
+    
+    <div class="main-container">
+        <div class="glass-card">
+            <div class="header">
+                <div class="user-profile">
+                    <div class="avatar">
+                        <span>MN</span>
+                    </div>
+                    <div class="user-info">
+                        <h2>mahmoud nazmy</h2>
+                        <p class="status">Premium User</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="countdown-section">
+                <div class="time-unit">
+                    <div class="time-card">
+                        <div class="time-value" id="days">00</div>
+                        <div class="time-crystal"></div>
+                    </div>
+                    <span class="time-label">Days</span>
+                </div>
+
+                <div class="time-unit">
+                    <div class="time-card">
+                        <div class="time-value" id="hours">00</div>
+                        <div class="time-crystal"></div>
+                    </div>
+                    <span class="time-label">Hours</span>
+                </div>
+
+                <div class="time-unit">
+                    <div class="time-card">
+                        <div class="time-value" id="minutes">00</div>
+                        <div class="time-crystal"></div>
+                    </div>
+                    <span class="time-label">Minutes</span>
+                </div>
+
+                <div class="time-unit">
+                    <div class="time-card">
+                        <div class="time-value" id="seconds">00</div>
+                        <div class="time-crystal"></div>
+                    </div>
+                    <span class="time-label">Seconds</span>
+                </div>
+            </div>
+
+            <div class="controls-section">
+                <div class="datetime-inputs">
+                    <div class="input-group">
+                        <i class="far fa-calendar"></i>
+                        <input type="date" id="date-input" class="modern-input">
+                    </div>
+                    <div class="input-group">
+                        <i class="far fa-clock"></i>
+                        <input type="time" id="time-input" class="modern-input">
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button id="start-btn" class="control-btn start">
+                        <i class="fas fa-play"></i>
+                        <span>Start</span>
+                    </button>
+                    <button id="stop-btn" class="control-btn stop" disabled>
+                        <i class="fas fa-stop"></i>
+                        <span>Stop</span>
+                    </button>
+                    <button id="reset-btn" class="control-btn reset">
+                        <i class="fas fa-redo"></i>
+                        <span>Reset</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
